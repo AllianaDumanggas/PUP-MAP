@@ -1,0 +1,128 @@
+<! DOCTYPE html>
+	<html lang= "en-US">
+	<head>
+	<meta charset="utf-8"/>
+	<title> PUP MAP KIOSK</title>
+	<link rel="icon" href="PUPlogo.png" type="image/x-icon" >
+	<link type= "text/css" rel="stylesheet" href="PUP MAP.css"/>
+	</head>
+	<body class="body">
+		<div id="Header">
+			<h1>
+				<img src="PUPlogo.png" id="map" width="70px" height="70px" alt="PUP Logo" >
+				Polytechnic University of the Philippines
+				(Mabini Campus Map)
+			</h1>
+		</div>
+		<div id="container">
+			<div id="center-column" >
+				<img id="Imagemap"src="pupmap1.gif"  alt="PUP Map" usemap="#PUPMap" />
+				<map name="PUPMap" >
+				
+						<area shape="rect" coords="413,68,470,96"alt="PUP Pool" href="#" 
+						onmouseover="Show('pool')"
+						onmouseout="Hide('pool')">
+						<area shape="poly" coords="251,27,334,68,303,150"alt="PUP Library" href="" 
+						onmouseover="Show('Library')"
+						onmouseout="Hide('Library')">
+						<area shape="circle" coords="304,215,17"alt="PUP Lagoon" href="" 
+						onmouseover="Show('Lagoon')"
+						onmouseout="Hide('Lagoon')">
+						<area shape="poly" coords="157,179,144,201,216,245,225,214" alt="Charlie Del Rosario Building" href=""
+						onmouseover="Show('CDRB')"
+						onmouseout="Hide('CDRB')">
+						<area shape="circle" coords="420,206,15" alt="Obelisk" href="#"
+						onmouseover="Show('Obelisk')"
+						onmouseout="Hide('Obelisk')">
+						<area shape="poly" coords="345,375,374,361,400,377,411,403,403,429,374,443,348,432,331,402"alt="Chapel" href=""
+						onmouseover="Show('Chapel')"
+						onmouseout="Hide('Chapel')">
+						<area shape="Rect" coords="501,301,471,346" alt="Grandstand" href="#"
+						onmouseover="Show('Grandstand')"
+						onmouseout="Hide('Grandstand')">
+						<area shape="circle" coords="448,259,19" alt="ams" href="#"
+						onmouseover="Show('ams')"
+						onmouseout="Hide('ams')">
+						<area shape="polygon" coords="550,303,460,434,548,494,636,363" alt="oval" href="#"
+						onmouseover="Show('oval')"
+						onmouseout="Hide('oval')">
+						<area shape="circle" coords="288,270,17" alt="ampitheater" href="#"
+						onmouseover="Show('ampitheater')"
+						onmouseout="Hide('ampitheater')">
+				</map>
+			</div>
+			<div id="right">
+				<div id="about" style="display:block">
+					<p>The Polytechnic University of the Philippines (PUP) is a government educational institution 
+					governed by Republic Act Number 8292 known as the Higher Education contained in the  
+					Commission on Higher Education Memorandum Circular No. 4, series 1997.
+					PUP is one of the country's highly competent educational institutions.
+					The PUP Community is composed of the Board of Regents, University Officials, Administrative and Academic Personnel,
+					 Students, various Organizations, and the Alumni. </p>
+					<p style="font-size:10px"> reference:(https://www.pup.edu.ph/about/)</p>
+				</div>
+				<div id="pool" class="imageholder"style="display:none">
+					<img class="image" src="pup-pool.jpg" alt="PUP POOL" style="display:block" >
+					<p class="title"> PUP POOL </p>
+				</div>
+				<div id="Library" class="imageholder"style="display:none">
+					<img class="image" src="Library.jpg" alt="PUP Library" style="display:block" >
+					<p class="title"> Ninoy Aquino Library and Learning Resource Center </p>
+				</div>
+				<div id="Lagoon" class="imageholder"style="display:none">
+					<img class="image" src="Lagoon.jpg" alt="PUP Lagoon" style="display:block" >
+					<p class="title"> PUP Lagoon </p>
+				</div>
+				<div id="CDRB" class="imageholder"style="display:none">
+					<img class="image" src="CDRB.jpg" alt="Charlie Del Rosario Building" style="display:block" >
+					<p class="title"> Charlie Del Rosario Student Development Center </p>
+				</div>
+				<div id="Obelisk" class="imageholder"style="display:none">
+					<img class="image" src="Obelisk.jpg" alt="PUP Obelisk" style="display:block" >
+					<p class="title"> PUP Obelisk </p>
+				</div>
+				<div id="Chapel" class="imageholder"style="display:none">
+					<img class="image" src="chapel.jpg" alt="PUP Chapel" style="display:block" >
+					<p class="title"> PUP Interfaith Chapel </p>
+				</div>
+				<div id="Grandstand" class="imageholder"style="display:none">
+					<img class="image" src="grandstand.jpg" alt="Grandstand" style="display:block" >
+					<p class="title"> Grandstand </p>
+				</div>
+				<div id="ams" class="imageholder"style="display:none">
+					<img class="image" src="Apolinario Mabini Shrine.jpg" alt="ams" style="display:block" >
+					<p class="title"> Apolinario Mabini Shrine </p>
+				</div>
+				<div id="oval" class="imageholder"style="display:none">
+					<img class="image" src="oval.jpg" alt="oval" style="display:block" >
+					<p class="title"> Oval Open Field </p>
+				</div> 
+				<div id="ampitheater" class="imageholder"style="display:none">
+					<img class="image" src="amphitheater.jpg" alt="oval" style="display:block" >
+					<p class="title"> Amphitheater </p>
+				</div>
+			</div>
+			
+
+			
+			
+		</div>
+		<div id="Footer">
+			<footer> 
+				Copyright &copy; 2023 PUP Map Kiosk
+			</footer>
+		</div>
+	</body>
+	<script>
+		function Show(id)
+		{
+			document.getElementById(id).style.display='block';
+			document.getElementById('about').style.display='none';
+		}
+		function Hide(id)
+		{
+			document.getElementById(id).style.display='none';
+			document.getElementById('about').style.display='block';
+		}
+	</script>
+	</html>
